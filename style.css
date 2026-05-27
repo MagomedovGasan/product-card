@@ -1,9 +1,9 @@
-body{
+body {
   font-family: arial, sans-serif;
   margin: 0;
   background-color: #FFFFFF;
 }
-.tag{
+.tag {
   font-size: 70px;
   font-weight: 400;
   line-height: 78px;
@@ -18,20 +18,20 @@ body{
   line-height: 18px;
   font-weight: 400;
 }
-.h{
+.title {
   font-size:20px;
   font-weight: 700;
   line-height: 27px;
   color: #515076;
   margin: 5;
 }
-.for_skin{
+.card_lable {
   font-weight: 400;
   font-size: 12px;
   line-height: 24px;
   color: #A5A3B9
 }
-.product_list{
+.product_list {
   list-style: none;
   padding: 0;
   margin: 0;
