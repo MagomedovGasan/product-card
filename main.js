@@ -49,8 +49,7 @@ title.addEventListener('mouseover', () => {
   //кнопка меняющая цвет при нажатии
 
 const toggleButton = document.querySelector('#btn-toggle'); 
-const heading = document.querySelector('.productTitle'); 
 
 toggleButton.addEventListener('click', () => {
-    heading.classList.toggle('red-text'); 
+    toggleButton.classList.toggle('red-text'); 
 });
