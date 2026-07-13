@@ -6,7 +6,7 @@ body {
   margin: 0;
   background-image: url("images/bg_1.png")
 }
-.tag {
+.productTitle {
   font-size: 70px;
   font-weight: 400;
   line-height: 78px;
@@ -97,3 +97,6 @@ body {
   align-items: center;
 }
 
+.red-text{
+  color: red;
+}
