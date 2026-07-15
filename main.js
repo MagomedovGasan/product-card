@@ -2,7 +2,7 @@
 const productCards = document.querySelectorAll('.card');
 const changeColorAllButton = document.querySelector('#Change-card-for-all-color-button');
 const greenColor = '#00FF00';
-const blueColor = '#0000FF'
+const blueColor = '#0000FF';
 changeColorAllButton.addEventListener('click', () => {
   productCards.forEach((card) => card.style.backgroundColor = greenColor)
 });
@@ -28,22 +28,21 @@ openGoogleButton.addEventListener('click',  () => {
 //выводим сообщение в консоль
 
 const outputLogButton = document.querySelector('#output-console-log');
-outputLogButton.addEventListener('click',() => outputConsoleLog ("ДЗ№6")
+outputLogButton.addEventListener('click', () => outputConsoleLog("ДЗ№6"));
 
-)
 function outputConsoleLog(message){
-  alert(message)
-  console.log(message)
-}
+  alert(message);
+  console.log(message);
+};
 
 
 //добавил наведение на заголовок
 
-const title = document.querySelector('.productTitle');
+const title = document.querySelector('.product-title');
 
 title.addEventListener('mouseover', () => {
-  console.log(title.textContent)
-  });
+  console.log(title.textContent);
+});
 
 
   //кнопка меняющая цвет при нажатии
