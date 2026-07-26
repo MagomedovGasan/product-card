@@ -1,6 +1,6 @@
 //изменяем цвет всех карточек
 const productCards = document.querySelectorAll('.card');
-const changeColorAllButton = document.querySelector('#Change-card-for-all-color-button');
+const changeColorAllButton = document.querySelector('#change-card-for-all-color-button');
 const greenColor = '#00FF00';
 const blueColor = '#0000FF';
 changeColorAllButton.addEventListener('click', () => {
@@ -11,7 +11,7 @@ changeColorAllButton.addEventListener('click', () => {
 //изменяем цвет первой карточки
 
 const firstProductCard = document.querySelector('.card');
-const changeColorFirstCardButton = document.querySelector('#Change-first-card-color-button');
+const changeColorFirstCardButton = document.querySelector('#change-first-card-color-button');
 changeColorFirstCardButton.addEventListener('click', () => {
   firstProductCard.style.backgroundColor = blueColor
 });
