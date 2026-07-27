@@ -7,14 +7,14 @@ showWeather("Москве", 20);
 
 //задание №4
 
-const countSpeedOfLight = 299792458
+const speedOfLight = 299792458
 const showSpeedOfLight = (speed) => {
-if (speed > countSpeedOfLight ) {
-  console.log("Сверхсветовая скорость");
-} else if (speed === countSpeedOfLight) {
-  console.log("Скорость света");
-} else{
-  console.log("Субсветовая скорость");
+  if (speed > speedOfLight ) {
+    console.log("Сверхсветовая скорость");
+  } else if (speed === speedOfLight) {
+      console.log("Скорость света");
+  } else{
+      console.log("Субсветовая скорость");
 }
 }
 showSpeedOfLight(299792458)
@@ -23,15 +23,15 @@ showSpeedOfLight(299792499)
 
 //Задание №5
 
-const getProduct = "phone"
-const showPrice = 20000
+const product = "phone"
+const price = 20000
 const showBudget = (currentBudget) => {
-if(currentBudget > showPrice) {
-  console.log(`${getProduct} приобретен. Спасибо за покупку`);
-} else{
-  const count = showPrice - currentBudget
-  console.log(`Вам не хватает ${count}, пополните баланс`);
-}
+  if(currentBudget > price) {
+    console.log(`${product} приобретен. Спасибо за покупку`);
+  } else{
+    const count = price - currentBudget
+    console.log(`Вам не хватает ${count}, пополните баланс`);
+  }
 }
 showBudget(18000);
 
@@ -40,11 +40,11 @@ showBudget(18000);
 const tv = 'lg'
 const cost = 15000
 const qwerty = (accept) => {
-if(accept > cost) {
-  console.log(`Товар ${tv} успешно приобретен`)
-} else{
-  console.log('Недостаточно средств!')
-}
+  if(accept > cost) {
+    console.log(`Товар ${tv} успешно приобретен`)
+  } else{
+    console.log('Недостаточно средств!')
+  }
 }
 qwerty(20000)
 
