@@ -11,36 +11,36 @@ const personData = {
 console.log(personData)
 
 //Task №4
-const carsData = {
+const carData = {
   carMake: "BMW",
   color: "black",
   year: "2020",
   transmission: "automatic"
 }
-carsData.owner = personData.name 
-console.log(carsData)
+carData.owner = personData.name 
+console.log(carData)
 
 //Task №5
-const showSpeed = () =>{
-  if ('maxSpeed' in carsData){
-  return;
+const showSpeed = (car) =>{
+  if (!'maxSpeed' in carData){
   }
-  carsData.maxSpeed = 180
+  carData.maxSpeed = 180
 }
-showSpeed(carsData)
+showSpeed(carData)
 
 //Task №6
-const getObject = (key, value) =>{
-  console.log(carsData['color'])
+const getObject = (obj, key) =>{
+  console.log(obj [key])
 }
-getObject(carsData, 'color')
+getObject(carData, 'color')
+getObject(carData, 'carMake')
 
 //Task №7
-const a = ['apple', 'cheese', 'bread']
-console.log(a)
+const food = ['apple', 'cheese', 'bread']
+console.log(food)
 
 //Task №8
-const b = [
+const products = [
   {
     nameBook: "The Lord of the Rings", 
     releaseDate: 1954, 
@@ -58,23 +58,23 @@ const b = [
   director: "Stephen Norrington",
 },
 ]
-b.push({
+products.push({
   movie: "Spider Man",
   releaseDate: 2002,
   director: "Sam Raimi"
 })
- console.log(b)
+ console.log(products)
 
  //Task №9
- const c = [
+ const film = [
   {
     movie: "Terminator",
     releaseDate: 1984,
     director: 'James Cameron',
   }
 ]
-const v = [...b, ...c]
-// console.log([...b, ...c])
+const v = [...products, ...film]
+// console.log([...products, ...film])
 
 //Task №10
 function checkRarity(arr) {
