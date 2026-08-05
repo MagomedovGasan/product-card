@@ -17,20 +17,21 @@ const carData = {
   year: "2020",
   transmission: "automatic"
 }
-carData.owner = personData.name 
+carData.owner = personData 
 console.log(carData)
 
 //Task №5
-const showSpeed = (car) =>{
-  if (!'maxSpeed' in carData){
+const checkAndAddMaxSpeed = (car) =>{
+  if (!('maxSpeed' in car)){
+    console.log(car.maxSpeed = 180)
   }
-  carData.maxSpeed = 180
+  // carData.maxSpeed = 180
 }
-showSpeed(carData)
+checkAndAddMaxSpeed(carData)
 
 //Task №6
 const getObject = (obj, key) =>{
-  console.log(obj [key])
+  console.log(obj[key])
 }
 getObject(carData, 'color')
 getObject(carData, 'carMake')
@@ -73,7 +74,7 @@ products.push({
     director: 'James Cameron',
   }
 ]
-const v = [...products, ...film]
+const productsFilm = [...products, ...film]
 // console.log([...products, ...film])
 
 //Task №10
@@ -86,6 +87,5 @@ function checkRarity(arr) {
   });
 }
 
-
-const updatedList = checkRarity(v);
+const updatedList = checkRarity(productsFilm);
 console.log(updatedList);
