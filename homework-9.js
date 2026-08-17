@@ -74,3 +74,5 @@ console.log(newAray10)
 
  const newAray12 = newAray10.toString()
  console.log(newAray12)
+
+ 
