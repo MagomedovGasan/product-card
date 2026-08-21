@@ -79,6 +79,4 @@ console.log(outEmail);
  const withoutSymbol = outEmail.toString()
  console.log(withoutSymbol);
 
- const celcia = [0, 10, 20, 30]
- const a = celcia.map(celc => celc * 1.8 + 32)
- console.log(celcia)
+ 
