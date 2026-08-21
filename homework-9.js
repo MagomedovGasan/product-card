@@ -1,8 +1,9 @@
 // Task№ 7
 
 import { comments } from "./comments.js"
-const newArray5 = comments.filter(comment => comment.email.includes('.com') )
-console.log(newArray5)
+const checkCom = comments.filter(comment => comment.email.includes('.com') )
+console.log(checkCom)
+
 
 // task № 2
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -15,21 +16,23 @@ const hasFord = cars.includes("Ford")
 console.log(hasFord);
 
 // Task№ 4
-const reverse = () => {
-const numbersReverse = numbers.reverse()
-const carsReverse = cars.reverse()
-console.log(numbersReverse)
-console.log(carsReverse)
+
+function reverseArray(array) {
+  return [...array].reverse();
 }
-reverse();
+const reversedNumbers = reverseArray(numbersArray);
+console.log(reversedNumbers);
+
+const reversedAppliances = reverseArray( cars);
+console.log(reversedAppliances)
 
 // Task№ 8
 
-const changeComments = comments.map(comment =>{
+const changeComments = comments.map(comment => {
    const copyOfComments = {...comment}
- if(comment.id <= 5){
+   if (comment.id <= 5){
   console.log(copyOfComments.postId = 2);
- }else{
+   } else {
   console.log(copyOfComments.postId = 1);
 }
  return copyOfComments
@@ -55,18 +58,18 @@ console.log(setLength);
 
 // Task№ 11
 
-const addComment = comments.reduce((result, comment ) => {
+const addEmail = comments.reduce((result, comment ) => {
   result.push(comment.email);
   return result
 },[]);
-  console.log(addComment);
+  console.log(addEmail);
 
 
 
-const setEmail = comments.map(comment => {
+const outEmail = comments.map(comment => {
   return comment.email
 });
-console.log(setEmail);
+console.log(outEmail);
 
 // Task№ 12
 
@@ -75,5 +78,3 @@ console.log(setEmail);
 
  const withoutSymbol = setEmail.toString()
  console.log(withoutSymbol);
-
- 
