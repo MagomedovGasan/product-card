@@ -79,11 +79,3 @@ console.log(outEmail);
 
  const withoutSymbol = outEmail.toString()
  console.log(withoutSymbol);
-
-const celcia = [0, 10, 20, 30]
-const a = celcia.map(celc => celc * 1.8 + 32)
-console.log(a)
-
-const nembers = [-2, 1, 4, 7, 10, 13, 18]
-const c = nembers.filter(nember => nember % 2 === 0)
-console.log(c)
