@@ -29,14 +29,17 @@ console.log(reversedAppliances)
 // Task№ 8
 
 const changeComments = comments.map(comment => {
-   const copyOfComments = {...comment}
-   if (comment.id <= 5){
-  console.log(copyOfComments.postId = 2);
-   } else {
-  console.log(copyOfComments.postId = 1);
-}
- return copyOfComments
+  const copyOfComments = { ...comment };
+
+  if (comment.id <= 5) {
+    console.log(copyOfComments.postId = 2);
+  } else {
+    console.log(copyOfComments.postId = 1);
+  }
+
+  return copyOfComments;
 });
+
 console.log(changeComments);
 //  Task№ 9
 
@@ -49,12 +52,12 @@ console.log(onlyIdAndName);
 
 // Task№ 10
 
-const setLength = comments.map(comment => {
+const commentsWithValidation = comments.map(comment => {
   const newComment = {...comment}
   newComment.isInvalid = newComment.body.length > 180
   return newComment
 });
-console.log(setLength);
+console.log(commentsWithValidation);
 
 // Task№ 11
 
@@ -63,8 +66,6 @@ const addEmail = comments.reduce((result, comment ) => {
   return result
 },[]);
   console.log(addEmail);
-
-
 
 const outEmail = comments.map(comment => {
   return comment.email
@@ -79,4 +80,10 @@ console.log(outEmail);
  const withoutSymbol = outEmail.toString()
  console.log(withoutSymbol);
 
- 
+const celcia = [0, 10, 20, 30]
+const a = celcia.map(celc => celc * 1.8 + 32)
+console.log(a)
+
+const nembers = [-2, 1, 4, 7, 10, 13, 18]
+const c = nembers.filter(nember => nember % 2 === 0)
+console.log(c)
