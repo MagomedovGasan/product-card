@@ -33,14 +33,13 @@ function renderCards (quantity) {
     productClone.querySelector(".card__title").textContent = product.name
     productClone.querySelector(".card__description").textContent = product.description
     productClone.querySelector(".price span").textContent = `${product.price} ${product.currency}`
-
   const componentList = productClone.querySelector(".component__list")
-  product.compound.forEach(component => {
+   product.compound.forEach(component => {
     const li = document.createElement("li")
     li.textContent = component
     componentList.appendChild(li)
   })
-  productList.appendChild(productClone);
+   productList.appendChild(productClone);
 })
 }
 const currentQuantity = getQuantity(); 
