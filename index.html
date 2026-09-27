@@ -16,6 +16,19 @@
         <button id="open-google">Открыть страницу Google</button>
         <button id="output-console-log">Вывести сообщение в консоль лог</button>
         <button id="btn-toggle"> изменения цвета заголовка </button>
+        <form id="form-registration">
+            <button id="registration">Регистрация</button>
+            <div id="modal" class="modal-container">
+                <div class="modal-showed">
+                    <input type="text" class="input-registration" name="введите имя" placeholder="введите имя" required>
+                    <input type="text" class="input-registration" name="введите фамилию" placeholder="введите  фамилию" required>
+                    <input type="date" class="input-registration" name="Введите дату рождения" placeholder="Введите дату рождения">
+                    <input type="password" class="input-registration" name="введите пароль" placeholder="введите пароль" required>
+                    <input type="submit" id=" submit-btn" class="input-registration" name="отправить" required>
+                    <button id="close-web" class="close-btn"> x </button>
+                </div>
+            </div>
+        </form>
         <ul class="product-list">
         </ul>
         <template id="product-template">
@@ -33,12 +46,47 @@
                     <span></span>
                 </div>
             </li>
+            
         </template>
+        <footer class="footer"> 
+            <div class="footer__left-block">
+                <h1 class="card__footer">Product Cards</h1>
+                <h2 class="footer__description">У Нас Самые Лучшие Продукты Для Ложи</h2>
+                <div class="footer__icon">
+                    <img src="images/Vector (1).png"  alt="">
+                    <img src="images/Vector.png" alt="">
+                </div>
+            </div>
+            <form id="email-form">
+                <div class="footer__centre-block">
+                    <p class="footer-subscribe">Подпишись на наши акции:</p>
+                    <div class="footer__form-wrapper">
+                        <input type="email" name="email" placeholder="Введите Email" class="inp" required>
+                        <button class="footer-subscribe-btn">Подписаться</button>
+                    </div>
+                </div>
+            </form>
+            <nav class="footer__menu">
+                <ul class="footer__list">
+                    <li class="link">Быстрые сылки</li>
+                    <li>Главная</li>
+                    <li>Магазин</li>
+                    <li>Контакты</li>
+                </ul>
+            </nav>
+            <div class="footer__copyright">
+                <hr class="footer__copyright-divider">
+                <div class="footer__copyright-text"> 
+                    <span>www.product-cards.com©all right reserve</span>
+                </div>
+            </div>
+        </footer>
         <script src="main.js"></script>
         <script src="homework-7.js"></script>
         <script src="homework-8.js"></script>
         <script type="module" src="homework-9.js"></script>
         <script type="module" src="homewor-10.js"></script>
+        <script src="homework-11.js"></script>
     </body>
 </html>
 
