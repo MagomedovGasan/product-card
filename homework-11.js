@@ -25,11 +25,11 @@ formRegistration.addEventListener("submit", (event) =>{
   data.createdOn = new Date()
   const modalPassword = document.getElementById("modal-password")
   const modalPasswordAgain = document.getElementById("modal-passwordAgain")
-  if(modalPassword.checkValidity() === false || modalPasswordAgain.checkValidity() === false){
+  if (modalPassword.checkValidity() === false || modalPasswordAgain.checkValidity() === false) {
     alert('Введите корректно поля пароля!')
-  } else if(modalPassword.value !== modalPasswordAgain.value){
+  } else if (modalPassword.value !== modalPasswordAgain.value) {
     alert('Введите одинаковые пароли!')
-  }else{
+  }else {
     alert('Регистрация пройдена успешно')
     modalForm.classList.remove("open")
     user = data
