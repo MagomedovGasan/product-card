@@ -23,20 +23,3 @@ class ElectrickCar extends Car{
 }
 const tesla = new ElectrickCar('tesla', 'white', 873, 96)
 tesla.electrick()
-
-
-class Store{
-  constructor(vegatables, fruits){
-    this.a = vegatables
-    this.b = fruits
-  }
-  use(){
-    if(this.a === 'tomato'){
-      console.log(`${this.a} = useful`)
-    } else{
-      console.log(`${this.b} = unuseful`)
-    }
-  }
-}
-const tge = new Store('tomato', 'orange')
-tge.use()
